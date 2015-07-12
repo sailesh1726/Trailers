@@ -3,4 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <array name="sampleArray">
+        <item >Sailesh</item>
+        <item>Bhargavi</item>
+        <item>Nageswara Rao</item>
+        <item>Satyavathi</item>
+    </array>
 </resources>
