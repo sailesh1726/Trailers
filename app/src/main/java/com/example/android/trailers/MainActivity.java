@@ -3,10 +3,9 @@ package com.example.android.trailers;
 
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -18,6 +17,7 @@ public class MainActivity extends BaseActivity {
 protected static String TAG= MainActivity.class.getName();
 
     private Toolbar toolbar;
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ protected static String TAG= MainActivity.class.getName();
         toolbar= (Toolbar) findViewById(R.id.app_bar);
 
         setSupportActionBar(toolbar);
+
+        recyclerView = (RecyclerView) findViewById(R.id.mainRecyclerView);
 
         RequestQueue requestQueue = VolleyControl.getInstance().getRequestQueue();
 

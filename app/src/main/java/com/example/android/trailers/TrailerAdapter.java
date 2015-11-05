@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -43,9 +44,11 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.ViewHold
     protected class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView textView;
+        ImageView imageView;
         public ViewHolder(View itemView) {
             super(itemView);
-            textView= (TextView) itemView.findViewById(R.id.trailerTextview);
+            textView= (TextView) itemView.findViewById(R.id.trailerTextView);
+            imageView= (ImageView) itemView.findViewById(R.id.movieThumbnail);
         }
     }
 }
